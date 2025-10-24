@@ -1,0 +1,41 @@
+print("1. list -> changeable")
+print("1.1 generate lists")
+empty_list = []
+print(empty_list)
+shopping_receipt = ["banana", "orange", "kiwi"]
+print(shopping_receipt)
+print(shopping_receipt[2])
+print(shopping_receipt[2][1])
+
+print("1.2 list manipulation functions")
+print("1.2.1 f.append(...)")
+shopping_receipt.append("nuts")
+print(shopping_receipt)
+print("1.2.2 f.insert(_;...)")
+shopping_receipt.insert(0, "chocolate")
+print(shopping_receipt)
+print("1.2.3 f.remove(...)")
+shopping_receipt.remove("chocolate")
+print(shopping_receipt)
+print("1.2.3 f.pop()")
+shopping_receipt.pop()
+print(shopping_receipt)
+print("1.2.3 delete -> del f[_]")
+del shopping_receipt[0]
+print(shopping_receipt)
+
+print("1.3 fct for lists")
+print("1.3.1 len()")
+print(len(shopping_receipt))
+print("1.3.2 min() & max()")
+print("min: " + min(shopping_receipt))
+print("max: " + max(shopping_receipt))
+print("1.3.3 slicing -> [_:_]")
+shopping_receipt.append("nuts")
+shopping_receipt.append("chocolate")
+print(shopping_receipt)
+print(shopping_receipt[0:3])
+
+print("1.4 nested list")
+shopping_list = ["banana", "orange", "kiwi", ["chocolate", "cookies"]]
+print(shopping_list[3][0][0:5])
